@@ -26,19 +26,16 @@ Once deployed, visit your live site here:
 Here’s your simple and organized directory layout:
 
 ```bash
-github.io-elimuhub-webmaster-toolkit/
+### github.io-elimuhub-webmaster-toolkit structure 
 │
-├── index.html                 # Homepage - main dashboard
-│
-├── /assets                    # Styling & scripts
-│   ├── style.css              # Main site styles
-│   └── script.js              # Basic interactivity
-│
-├── /pages                     # Subpages for learning topics
-│   ├── keyword-research.html
-│   ├── backlinks.html
-│   ├── analytics.html
-│   └── sitemaps.html
-│
-├── README.md                  # This file (project documentation)
-└── _config.yml                # GitHub Pages / Jekyll configuration
+├── index.html
+├── README.md
+├── _config.yml
+├── /assets
+│   ├── style.css
+│   └── favicon.png
+└── /pages
+    ├── keyword-research.html
+    ├── backlinks.html
+    ├── analytics.html
+    └── sitemaps.html                # GitHub Pages / Jekyll configuration
