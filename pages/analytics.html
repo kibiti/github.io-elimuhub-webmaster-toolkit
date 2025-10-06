@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analytics | Elimuhub Webmaster Toolkit</title>
+  <meta name="description" content="Learn how to set up and use Google Analytics, Tag Manager, and Search Console to track your tutoring website performance with Elimuhub Webmaster Toolkit.">
+  <meta name="keywords" content="Elimuhub, website analytics, Google Analytics, tutor SEO, Bing Webmaster Tools, Kenya tutoring website">
+  <link rel="canonical" href="https://kibiti.github.io/github.io-elimuhub-webmaster-toolkit/pages/analytics.html">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
+
 <body>
   <header>
-    <h1>Analytics</h1>
-    <nav><a href="https://elimuhub.simdif.com/index.html">← Back to Home</a></nav>
+    <h1>📊 Website Analytics</h1>
+    <nav>
+      <a href="https://elimuhub.simdif.com/index.html">← Back to Elimuhub Main</a> |
+      <a href="../index.html">Toolkit Home</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>📊 Understanding Website Analytics</h2>
+    <section class="intro">
       <p>
-        Website analytics help you track visitors, monitor engagement, and measure the success of your tutoring website. 
-        Tools like <strong>Google Analytics</strong> and <strong>Bing Webmaster Tools</strong> provide insights that can help 
-        you make informed marketing and SEO decisions.
+        Website analytics help tutors and education centers like <strong>Elimuhub</strong> 
+        understand how parents, students, and visitors interact with their website. 
+        By analyzing this data, you can improve your visibility, attract more learners, 
+        and make data-driven marketing decisions.
       </p>
     </section>
 
@@ -27,43 +34,81 @@
       <ol>
         <li>Go to <a href="https://analytics.google.com" target="_blank">Google Analytics</a> and sign in.</li>
         <li>Create a property for your website (e.g., <em>elimuhub.simdif.com</em>).</li>
-        <li>Copy your tracking ID (e.g., <code>G-XXXXXXXXXX</code>).</li>
-        <li>Paste the Google tag (gtag.js) code inside the <code>&lt;head&gt;</code> section of your website HTML.</li>
+        <li>Copy your tracking ID (looks like <code>G-XXXXXXXXXX</code>).</li>
+        <li>Paste the tracking code (gtag.js) inside your website’s <code>&lt;head&gt;</code> tag.</li>
       </ol>
-      <p><em>Tip:</em> You can also manage your Analytics tags easily using <strong>Google Tag Manager</strong>.</p>
+      <p><em>Tip:</em> You can manage all scripts easily using <strong>Google Tag Manager</strong>.</p>
+
+      <h3>Example Google Tag (gtag.js)</h3>
+      <pre><code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+&lt;/script&gt;
+</code></pre>
     </section>
 
     <section>
-      <h2>📈 Tracking What Matters</h2>
+      <h2>📈 Tracking What Matters Most</h2>
       <ul>
-        <li><strong>Traffic Sources:</strong> Know where your visitors come from — Google, social media, or referrals.</li>
-        <li><strong>Popular Pages:</strong> See which tutoring service pages attract the most views.</li>
-        <li><strong>Time on Page:</strong> Measure engagement and learning interest in your content.</li>
-        <li><strong>Conversion Goals:</strong> Track how many visitors contact Elimuhub for tutoring services.</li>
+        <li><strong>Traffic Sources:</strong> Where your visitors come from — Google, social media, or referrals.</li>
+        <li><strong>Popular Pages:</strong> Which subjects or services attract the most interest.</li>
+        <li><strong>Engagement:</strong> Average time on page and bounce rate show how engaging your content is.</li>
+        <li><strong>Conversion Goals:</strong> Track key actions like form submissions, WhatsApp clicks, or phone calls.</li>
       </ul>
     </section>
 
     <section>
       <h2>📍 Local SEO & Google Search Console</h2>
       <p>
-        Connect your website with <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a> 
-        to monitor your visibility on Google Search, index coverage, and performance of local tutoring-related keywords in Kenya.
+        Connect your site with <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a> 
+        to monitor search performance and visibility for local tutoring keywords in Kenya, such as 
+        <em>“home tutor in Nairobi”</em> or <em>“IGCSE Physics revision help.”</em>
       </p>
     </section>
 
     <section>
-      <h2>🧮 Recommended Tools</h2>
+      <h2>🧮 Recommended Analytics Tools</h2>
       <ul>
-        <li><a href="https://analytics.google.com" target="_blank">Google Analytics</a></li>
-        <li><a href="https://tagmanager.google.com" target="_blank">Google Tag Manager</a></li>
-        <li><a href="https://search.google.com/search-console" target="_blank">Google Search Console</a></li>
-        <li><a href="https://clarity.microsoft.com" target="_blank">Microsoft Clarity</a> (for heatmaps & session insights)</li>
+        <li><a href="https://analytics.google.com" target="_blank">Google Analytics</a> — website tracking and insights.</li>
+        <li><a href="https://tagmanager.google.com" target="_blank">Google Tag Manager</a> — manage tracking scripts easily.</li>
+        <li><a href="https://search.google.com/search-console" target="_blank">Google Search Console</a> — SEO and indexing insights.</li>
+        <li><a href="https://clarity.microsoft.com" target="_blank">Microsoft Clarity</a> — free heatmaps and visitor session recordings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>✅ Analytics Setup Checklist</h2>
+      <ul>
+        <li>[ ] Create a Google Analytics property for <code>elimuhub.simdif.com</code>.</li>
+        <li>[ ] Add your <code>G-ID</code> code snippet in the site’s <code>&lt;head&gt;</code> section.</li>
+        <li>[ ] Link Analytics with <strong>Google Tag Manager</strong>.</li>
+        <li>[ ] Verify your domain in <strong>Google Search Console</strong>.</li>
+        <li>[ ] Define conversion goals (e.g., WhatsApp clicks, contact forms).</li>
+        <li>[ ] Review traffic and top pages every week to guide improvements.</li>
+      </ul>
+    </section>
+
+    <section class="resources">
+      <h2>📚 Related Guides</h2>
+      <p>
+        Explore more from the Elimuhub Webmaster Toolkit:
+      </p>
+      <ul>
+        <li><a href="keyword-research.html">Keyword Research</a></li>
+        <li><a href="backlinks.html">Backlinks</a></li>
+        <li><a href="sitemaps.html">Sitemaps</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Elimuhub Education Consultants | Built with ❤️ on GitHub Pages</p>
+    <p>© 2025 Elimuhub Education Consultants | Built with ❤️ by Elimuhub |
+      Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> 
+      & <a href="https://elimuhub.simdif.com/" target="_blank">Simdif</a>
+    </p>
   </footer>
 </body>
 </html>
