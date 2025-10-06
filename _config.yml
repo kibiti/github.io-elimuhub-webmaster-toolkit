@@ -1,3 +1,50 @@
+# ----------------- Site Settings -----------------
+title: "Elimuhub Webmaster Toolkit"
+description: "A free SEO and analytics learning resource by Elimuhub Education Consultants for tutors and educators in Kenya."
+baseurl: "" # leave empty if hosted at root
+url: "https://kibiti.github.io/github.io-elimuhub-webmaster-toolkit" # GitHub Pages URL
+language: en
 theme: jekyll-theme-cayman
-title: Elimuhub Webmaster Toolkit
-description: A free SEO learning resource by Elimuhub Education Consultants
+
+# Author Information
+author:
+  name: "Elimuhub Education Consultants"
+  email: "elimuhubconsultant@gmail.com"
+
+# SEO & Keywords
+keywords: "Elimuhub, SEO, Webmaster Toolkit, Keyword Research, Backlinks, Analytics, Sitemaps, tutors, Kenya"
+
+# Social Links
+social:
+  github: "https://github.com/kibiti"
+  twitter: "https://twitter.com/elimuhubk"
+  facebook: "https://www.facebook.com/elimuhubconsultant"
+  instagram: "https://www.instagram.com/elimuhubs"
+  website: "https://elimuhub.simdif.com"
+
+# Navigation Menu (works with Jekyll)
+nav:
+  - title: "Home"
+    url: "/index.html"
+  - title: "Keyword Research"
+    url: "/pages/keyword-research.html"
+  - title: "Backlinks"
+    url: "/pages/backlinks.html"
+  - title: "Analytics"
+    url: "/pages/analytics.html"
+  - title: "Sitemaps"
+    url: "/pages/sitemaps.html"
+
+# Defaults for posts/pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Elimuhub Education Consultants"
+
+# Plugins (optional, Jekyll supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
