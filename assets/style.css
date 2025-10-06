@@ -1,35 +1,166 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #333;
+/* ----------------- Reset & Base ----------------- */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
+  font-size: 16px;
+  padding: 1rem;
+}
+
+/* ----------------- Header ----------------- */
 header {
-  background: #0056b3;
-  color: white;
-  padding: 1em 0;
   text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: #004080;
+  color: white;
+  border-radius: 8px;
 }
-nav ul {
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1em;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-nav a {
-  color: white;
+
+header nav ul li a {
   text-decoration: none;
+  color: #ffdd00;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+header nav ul li a:hover {
+  background-color: #003366;
+  color: #fff;
+}
+
+/* ----------------- Main Content ----------------- */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+section ul, section ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section ul li, section ol li {
+  margin-bottom: 0.6rem;
+}
+
+section .intro p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* ----------------- Links & Buttons ----------------- */
+a {
+  color: #004080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #004080;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #00264d;
+}
+
+/* ----------------- Checklist Styling ----------------- */
+ul.checklist li::before {
+  content: "✅ ";
+  margin-right: 0.5rem;
+  color: green;
   font-weight: bold;
 }
-main {
-  padding: 2em;
-  text-align: center;
-}
+
+/* ----------------- Footer ----------------- */
 footer {
-  background: #222;
-  color: white;
   text-align: center;
-  padding: 1em 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #004080;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------- Responsive ----------------- */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
 }
